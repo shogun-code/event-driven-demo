@@ -1,5 +1,3 @@
-version: '3.7'
-
 networks:
-  food-ordering-system:
+  event-driven-demo:
     driver: bridge

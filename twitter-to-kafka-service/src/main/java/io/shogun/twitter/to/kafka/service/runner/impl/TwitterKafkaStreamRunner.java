@@ -3,6 +3,7 @@ package io.shogun.twitter.to.kafka.service.runner.impl;
 import io.shogun.config.TwitterToKafkaServiceConfigData;
 import io.shogun.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
 import io.shogun.twitter.to.kafka.service.runner.StreamRunner;
+import jakarta.annotation.PreDestroy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -12,7 +13,6 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterStream;
 import twitter4j.TwitterStreamFactory;
 
-import javax.annotation.PreDestroy;
 import java.util.Arrays;
 
 @Component

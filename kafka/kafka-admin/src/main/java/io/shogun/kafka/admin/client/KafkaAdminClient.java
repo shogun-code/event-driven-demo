@@ -92,7 +92,7 @@ public class KafkaAdminClient {
 
     private HttpStatus getSchemaRegistryStatus() {
         try {
-            return webClient
+            return (HttpStatus) webClient
                     .method(HttpMethod.GET)
                     .uri(kafkaConfigData.getSchemaRegistryUrl())
                     .exchange()
